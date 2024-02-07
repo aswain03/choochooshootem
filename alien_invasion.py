@@ -103,10 +103,14 @@ class AlienInvasion:
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
             self.score.prep_score()
+            self.score.prep_level()
+            self.score.check_high_score()
         if not self.aliens:
             self.bullets.empty()
             self._create_fleet()
             self.settings.increase_speed()
+            self.stats.level += 1
+            self.score.prep_level()
 
     def _update_screen(self):
         self.screen.fill(self.settings.bg_color)
