@@ -3,7 +3,7 @@ from pygame.sprite import Sprite
 
 
 # class Bullet(Sprite):
-#     """manages the rounds fired"""
+#     """manages the rounds fired (pygame sprite)"""
 
 #     def __init__(self, ai_game):
 #         super().__init__()
@@ -28,7 +28,7 @@ from pygame.sprite import Sprite
 
 
 class Bullet(Sprite):
-    """manages the rounds fired"""
+    """manages the rounds fired (custom sprite)"""
 
     def __init__(self, ai_game):
         super().__init__()
