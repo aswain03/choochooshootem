@@ -104,6 +104,7 @@ class AlienInvasion:
                 self.stats.score += self.settings.alien_points * len(aliens)
             self.score.prep_score()
             self.score.prep_level()
+            self.score.prep_ships()
             self.score.check_high_score()
         if not self.aliens:
             self.bullets.empty()
@@ -163,7 +164,7 @@ class AlienInvasion:
     def _ship_hit(self):
         if self.stats.ships_left > 0:
             self.stats.ships_left -= 1
-
+            self.score.prep_ships()
             self.bullets.empty()
             self.aliens.empty()
 
