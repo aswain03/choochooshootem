@@ -1,5 +1,9 @@
 # choochooshootem
 
+You'll need Python and pip. 
+
+Install pygame `pip install pygame`
+
 To play run `python alien_invasion.py` and click the green button to start.
 
 You have 3 lives. The fleets of chontrains will just keep coming. 
